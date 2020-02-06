@@ -1,0 +1,22 @@
+* {
+  background-color: darkgoldenrod;
+}
+
+canvas{
+  display: block;
+  background-color: black;
+  min-height: 1200;
+}
+
+
+///--- PARTICLES.JS CSS --- \\\
+
+#particles-js {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  background-image: url('');
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
