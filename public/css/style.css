@@ -21,15 +21,15 @@ canvas {
   margin: 0;
   padding: 0;
   color: goldenrod;
-  text-decoration: none;
-  animation: colorNav 3s ease-in-out; }
+  text-decoration: none; }
 
 ul h3 {
   margin: 0;
   padding: 0;
   text-align: center;
   display: none;
-  font-size: 115%; }
+  font-size: 115%;
+  animation: colorNav 3s ease-in-out; }
 
 #menuButton {
   background: linear-gradient(to bottom, #b8870b 5%, #2b2a28 100%);
