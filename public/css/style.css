@@ -26,7 +26,6 @@ canvas {
   font-family: 'Beth Ellen', cursive;
   border: none; }
 
-addadde
 #menuButton:hover {
   background: linear-gradient(to bottom, #2b2a28 5%, #b8870b 100%);
   background-color: #2b2a28; }
@@ -46,5 +45,59 @@ div .button {
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat; }
+
+.circle-container {
+  position: absolute;
+  /* 1 */
+  width: 25em;
+  height: 25em;
+  padding: 0;
+  border-radius: 50%;
+  list-style: none;
+  /* 2 */
+  box-sizing: content-box;
+  /* 3 */
+  margin: 10% 40% 30% 40%;
+  border: none 3px black;
+  box-sizing: border-box;
+  display: grid;
+  background-image: linear-gradient(rgba(255, 0, 0, 0), darkgoldenrod);
+  text-align: center; }
+  .circle-container > * {
+    /* 4 */
+    display: grid;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 8em;
+    height: 8em;
+    margin: -4em; }
+  .circle-container > :nth-of-type(1) {
+    transform: rotate(0deg) translate(12.5em) rotate(0deg); }
+  .circle-container > :nth-of-type(2) {
+    transform: rotate(51.4285714286deg) translate(12.5em) rotate(-51.4285714286deg); }
+  .circle-container > :nth-of-type(3) {
+    transform: rotate(102.8571428571deg) translate(12.5em) rotate(-102.8571428571deg); }
+  .circle-container > :nth-of-type(4) {
+    transform: rotate(154.2857142857deg) translate(12.5em) rotate(-154.2857142857deg); }
+  .circle-container > :nth-of-type(5) {
+    transform: rotate(205.7142857143deg) translate(12.5em) rotate(-205.7142857143deg); }
+  .circle-container > :nth-of-type(6) {
+    transform: rotate(257.1428571429deg) translate(12.5em) rotate(-257.1428571429deg); }
+  .circle-container > :nth-of-type(7) {
+    transform: rotate(308.5714285714deg) translate(12.5em) rotate(-308.5714285714deg); }
+
+.circle-container img {
+  display: grid;
+  width: 100%;
+  border-radius: 50%;
+  filter: grayscale(100%);
+  -webkit-transition: all 5s  ease-in;
+  -moz-transition: all 5s ease-in;
+  -ms-transition: all 5s ease-in;
+  transition: all 5s linear; }
+  .circle-container img:hover {
+    filter: grayscale(0);
+    transform: rotate(-11650deg) scale(1.8); }
 
 /*# sourceMappingURL=style.css.map */
