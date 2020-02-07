@@ -100,4 +100,17 @@ div .button {
     filter: grayscale(0);
     transform: rotate(-11650deg) scale(1.8); }
 
+@keyframes colorful {
+  from {
+    filter: hue-rotate();
+    transform: scale(1); }
+  to {
+    filter: hue-rotate(1440deg);
+    transform: scale(3); } }
+@keyframes colorNav {
+  from {
+    filter: hue-rotate(); }
+  to {
+    filter: hue-rotate(-1turn); } }
+
 /*# sourceMappingURL=style.css.map */

@@ -152,3 +152,22 @@ div .button {
 ///    animation: spinscale 1s infinite linear;
   }
 }
+
+/// --- ANIMATION KEYFRAMES -- /////
+
+@keyframes colorful {
+  from {
+    filter: hue-rotate();
+    transform: scale(1); }
+  to {
+    filter: hue-rotate(1440deg);
+    transform: scale(3); } }
+
+@keyframes colorNav {
+  from {
+    filter: hue-rotate();
+  }
+  to {
+    filter: hue-rotate(-1turn);
+  }
+}
