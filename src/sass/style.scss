@@ -55,7 +55,6 @@ ul h3 {
 	text-decoration:none;
     font-family: 'Beth Ellen', cursive;
     border: none;
-    ///margin-left: 25%;
 }
 
 #menuButton:hover {
@@ -161,9 +160,9 @@ div .button {
   width: 100%; 
   border-radius: 50%;
   filter: grayscale(100%);
-  -webkit-transition: all 5s  ease-in;
-  -moz-transition: all 5s ease-in;
-  -ms-transition: all 5s ease-in;
+  -webkit-transition: all 5s linear;
+  -moz-transition: all 5s linear;
+  -ms-transition: all 5s linear;
   transition: all 5s linear;
   
   &:hover {
