@@ -11,7 +11,8 @@ canvas{
   min-height: 100vh;
 }
 
-.container {
+.container,
+.container-fluid {
   font-family: 'Beth Ellen', cursive;
 }
 
@@ -23,7 +24,24 @@ canvas{
 }
 
 
-//// --- Navigation TOGGLE BUTTON --- ///////
+//// --- Navigation ---//////    
+
+.main-nav a{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  color: goldenrod;
+  text-decoration: none;
+  animation: colorNav 3s ease-in-out;
+}
+
+ul h3 {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+/// ---  TOGGLE BUTTON --- ///////
 
 #menuButton {
 	background:linear-gradient(to bottom, #b8870b 5%, #2b2a28 100%);
@@ -86,16 +104,16 @@ div .button {
   $half-item: ($item-size / 2);
   $half-parent: ($circle-size / 2);
   
-  position: absolute; /* 1 */
+  position: relative; /* 1 */
   width:  $circle-size;
   height: $circle-size;
   padding: 0;
   border-radius: 50%; 
   list-style: none; /* 2 */ 
-  box-sizing: content-box; /* 3 */ 
+  box-sizing:content-box; /* 3 */ 
   
   > * { /* 4 */
-    display: grid;
+    display: block;
     position: absolute;
     top:  50%; 
     left: 50%;
@@ -127,7 +145,8 @@ div .button {
 
 .circle-container {
   @include distribute-on-circle(7, 25em, 8em, false); 
-  margin: 10% 40% 30% 40%;
+ /// margin: 10% 40% 30% 40%;
+  margin: 5em auto 0;
   border: none 3px black;
   box-sizing: border-box;
   display:grid;
@@ -136,7 +155,7 @@ div .button {
   }
 
 .circle-container img { 
-  display:grid; 
+  display:block; 
   width: 100%; 
   border-radius: 50%;
   filter: grayscale(100%);

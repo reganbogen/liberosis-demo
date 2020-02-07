@@ -8,12 +8,26 @@ canvas {
   vertical-align: bottom;
   min-height: 100vh; }
 
-.container {
+.container,
+.container-fluid {
   font-family: 'Beth Ellen', cursive; }
 
 #titleCard {
   text-align: left;
   color: darkgoldenrod; }
+
+.main-nav a {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  color: goldenrod;
+  text-decoration: none;
+  animation: colorNav 3s ease-in-out; }
+
+ul h3 {
+  margin: 0;
+  padding: 0;
+  text-align: center; }
 
 #menuButton {
   background: linear-gradient(to bottom, #b8870b 5%, #2b2a28 100%);
@@ -47,7 +61,7 @@ div .button {
   background-repeat: no-repeat; }
 
 .circle-container {
-  position: absolute;
+  position: relative;
   /* 1 */
   width: 25em;
   height: 25em;
@@ -57,7 +71,7 @@ div .button {
   /* 2 */
   box-sizing: content-box;
   /* 3 */
-  margin: 10% 40% 30% 40%;
+  margin: 5em auto 0;
   border: none 3px black;
   box-sizing: border-box;
   display: grid;
@@ -65,7 +79,7 @@ div .button {
   text-align: center; }
   .circle-container > * {
     /* 4 */
-    display: grid;
+    display: block;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -88,7 +102,7 @@ div .button {
     transform: rotate(308.5714285714deg) translate(12.5em) rotate(-308.5714285714deg); }
 
 .circle-container img {
-  display: grid;
+  display: block;
   width: 100%;
   border-radius: 50%;
   filter: grayscale(100%);
