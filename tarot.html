@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <script src="js/tarot.js"></script>
+  
+  <!-- BOOTSTRAP -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="CSS/styles.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Major+Mono+Display&display=swap" rel="stylesheet">
+  
+  <title>My Fortune</title>
+</head>
+
+<main>
+    <div class="container" id="imgDiv">
+      <img src="card/spacer.gif" onclick="tellFortune()" id="myFortune" class="center" height=526px width=300px>
+    </div>
+    <div id="divButton">
+      <input type="button" id="theButton" value="Meanings" onClick="showHideDiv('divMsg')"/>
+    </div>
+    <div id="divMsg">
+      <p id="words"> </p>
+    </div>
+
+</main>
+</html>
