@@ -44,10 +44,10 @@
           <div class="row">
             <!--Title & Button -->
             <div class="col">
-              <h1 class="float-left headline" id="titleCard">Liberosis</h1>
+              <h1 class="float-left titleScroll" id="titleCard">Liberosis</h1>
             </div>
             <div class="col button">
-              <button class="float-right" id="menuButton">Navigation</button>
+              <button class="float-right buttonScroll" id="menuButton">Navigation</button>
             </div>
           </div>
         </div>
@@ -56,7 +56,7 @@
       <!--MAIN-->
       <main>
         <!--Circle of Phenakistoscopes-->
-        <div class="container-fluid phenaCircle">
+        <div class="col-sm-6 mx-auto phenaCircle">
           <ul class="circle-container main-nav">
             <li><a href="tarot.html"><img class="pic" src="img/frog.png"><h3>Your Fortune</h3></a></li>
             <li><a href="#"><img class="pic" src="img/blackbird.png"><h3>JavaScript</h3></a></li>
@@ -79,7 +79,8 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <!--SCROLLREVEAL scripts-->
         <script>
-          ScrollReveal().reveal('.headline');
+          ScrollReveal().reveal('.titleScroll');
+          ScrollReveal().reveal('.buttonScroll');
         </script>
 
   </body>

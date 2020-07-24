@@ -132,7 +132,7 @@ div .button {
     filter: grayscale(0);
     transform: rotate(-11650deg) scale(1.8); }
 
-/* -- ANIMATIONS -- */
+/* -- ANIMATIONS: index -- */
 
 @keyframes colorful {
   from {
@@ -146,6 +146,26 @@ div .button {
     filter: hue-rotate(); }
   to {
     filter: hue-rotate(-1turn); } }
+
+/* -- TAROT CARD IMG -- */
+
+#myFortune {
+  display: block;
+  margin: auto;
+  animation: colorShadow 10s linear infinite;
+  z-index: 2;
+  box-shadow: 0px 0px 70px 0px yellow;
+}
+
+/* -- ANIMATIONS: tarot --*/
+
+@keyframes colorShadow {
+  from {
+    filter: hue-rotate();
+  } to {
+    filter: hue-rotate(1440deg);
+  }
+}
 
 /* -- BREAKPOINTS -- */
 

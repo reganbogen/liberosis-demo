@@ -21,14 +21,16 @@
 
 <main>
     <div class="container" id="imgDiv">
-      <img src="card/spacer.gif" onclick="tellFortune()" id="myFortune" class="center" height=526px width=300px>
-    </div>
-    <div id="divButton">
-      <input type="button" id="theButton" value="Meanings" onClick="showHideDiv('divMsg')"/>
-    </div>
-    <div id="divMsg">
-      <p id="words"> </p>
-    </div>
-
+      <div class="row">
+        <div class="col">
+          <img src="card/spacer.gif" onclick="tellFortune()" id="myFortune" class="center" height=526px width=300px>
+        </div>                                                                         <div id="divButton" class="text-center col">
+        <input type="button" id="theButton" value="Meanings" onClick="showHideDiv('divMsg')"/>
+        </div>
+        <div id="divMsg" class="col">
+          <p id="words"> </p>
+        </div>
+      </div>
+  </div>
 </main>
 </html>
