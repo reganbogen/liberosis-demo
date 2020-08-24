@@ -1,3 +1,79 @@
+/* -- LAYOUT -- */
+
+html {
+  background-color: black;
+  font-family: 'Beth Ellen', monospace;}
+
+body {
+  background-color: black;
+}
+
+/* -- PARTICLES -- */
+
+/* #particles-js {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  background-image: url("");
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat; } */
+
+.particles-js-canvas-el {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+/* -- Liberosis Title -- */
+
+#titleCard {
+  color: darkgoldenrod;
+  font-family: 'Beth Ellen', monospace;}
+
+.main-nav a {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  color: goldenrod;
+  text-decoration: none;
+  font-family: 'Beth Ellen', monospace;}
+
+ul h3 {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  display: none;
+  font-size: 115%;
+  animation: colorNav 3s ease-in-out; }
+
+/* -- BUTTON -- */
+
+#menuButton {
+  background: linear-gradient(to bottom, darkgoldenrod 5%, black 100%);
+  background-color: #b8870b;
+  border-radius: 42px;
+  color: black;
+  font-size: 24px;
+  padding: 15px 1px;
+  text-decoration: none;
+  font-family: 'Beth Ellen', cursive;
+  border: none; }
+
+#menuButton:hover {
+  background: linear-gradient(to bottom, #2b2a28 5%, #b8870b 100%);
+  background-color: #2b2a28; }
+
+#menuButton:active {
+  position: relative;
+  top: 1px; }
+
+div .button {
+  margin-top: 1%; }
+
+
 /// --- CIRCLE SASS for img --- \\\
 
 /// Mixin to put items on a circle
@@ -89,3 +165,19 @@
 ///    animation: spinscale 1s infinite linear;
   }
 }
+
+/* -- ANIMATIONS: index -- */
+
+@keyframes colorful {
+  from {
+    filter: hue-rotate();
+    transform: scale(1); }
+  to {
+    filter: hue-rotate(1440deg);
+    transform: scale(3); } }
+@keyframes colorNav {
+  from {
+    filter: hue-rotate(); }
+  to {
+    filter: hue-rotate(-1turn); } }
+
