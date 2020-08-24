@@ -201,4 +201,33 @@ div .button {
   }
 }
 
+/* Words for Card Descriptions */
+
+#words {
+  border: 5px inset yellow;
+  color: yellow;
+  font-family: 'Nova Mono', monospace;
+  margin: 2% 10%;
+  text-align: center;
+}
+
+#divMsg {
+  display:none;
+}
+
+
+#divButton {
+  text-align: center;
+}
+
+/* -BUTTON- */
+
+#theButton {
+  border: 1px double yellow;
+  background-color: rgba(0, 0, 0, 0);
+  color: yellow;
+  font-family: 'Nova Mono', monospace;
+  border-radius: 20px;
+}
+
 /* -- BREAKPOINTS -- */
