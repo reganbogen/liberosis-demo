@@ -20,14 +20,14 @@
 </head>
 
 <main>
-    <div class="container" id="imgDiv">
+    <div class="container mx-auto" id="imgDiv">
       <div class="row">
-        <div class="col">
+        <div class="container-fluid">
           <img src="card/spacer.gif" onclick="tellFortune()" id="myFortune" class="center" height=526px width=300px>
-        </div>                                                                         <div id="divButton" class="text-center col">
+        </div>                                                                         <div id="divButton" class="text-center container-fluid">
         <input type="button" id="theButton" value="Meanings" onClick="showHideDiv('divMsg')"/>
         </div>
-        <div id="divMsg" class="col">
+        <div id="divMsg" class="container-fluid">
           <p id="words"> </p>
         </div>
       </div>
