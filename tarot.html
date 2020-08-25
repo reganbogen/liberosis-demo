@@ -22,17 +22,26 @@
 </head>
 
 <main>
-    <div class="container mx-auto" id="imgDiv">
-      <div class="row">
-        <div class="container-fluid">
-          <img src="card/spacer.gif" onclick="tellFortune()" id="myFortune" class="center" height=526px width=300px>
-        </div>                                                                         <div id="divButton" class="text-center container-fluid">
-        <input type="button" id="theButton" value="Meanings" onClick="showHideDiv('divMsg')"/>
-        </div>
-        <div id="divMsg" class="container-fluid mx-auto">
-          <p id="words"></p>
+    
+    <header>
+      <div class="container">
+        <a href=index.html style="text-decoration:none"><h1 id="tarotTitle">My Fortune</h1></a>
+         </div>
+    </header>
+  
+    <body>
+      <div class="container mx-auto" id="imgDiv">
+        <div class="row">
+          <div class="container-fluid">
+            <img src="card/spacer.gif" onclick="tellFortune()" id="myFortune" class="center" height=526px width=300px>
+          </div>                                                                         <div id="divButton" class="text-center container-fluid">
+          <input type="button" id="theButton" value="Meanings" onClick="showHideDiv('divMsg')"/>
+          </div>
+          <div id="divMsg" class="container-fluid mx-auto">
+            <p id="words"></p>
+          </div>
         </div>
       </div>
-  </div>
+    </body>
 </main>
 </html>

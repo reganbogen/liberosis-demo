@@ -147,6 +147,12 @@ div .button {
     filter: hue-rotate(); }
   to {
     filter: hue-rotate(1440deg); } }
+/* TITLE: tarot */
+#tarotTitle {
+  font-family: 'Nova Mono', monospace;
+  text-align: center;
+  color: yellow; }
+
 /* Words for Card Descriptions */
 #words {
   border: 5px inset yellow;
@@ -167,7 +173,8 @@ div .button {
   background-color: rgba(0, 0, 0, 0);
   color: yellow;
   font-family: 'Nova Mono', monospace;
-  border-radius: 20px; }
+  border-radius: 30px;
+  margin: 1%; }
 
 /* -- BREAKPOINTS -- */
 
