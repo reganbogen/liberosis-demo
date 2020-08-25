@@ -13,7 +13,9 @@
 
   <!-- CSS -->
   <link rel="stylesheet" type="text/css" href="CSS/style.css">
-
+  
+  <!-- ScrollReveal Experimentin' -->
+  <script src="https://unpkg.com/scrollreveal"></script>  
 
   <!-- FONTS -->
   <link href="https://fonts.googleapis.com/css2?family=Nova+Mono&display=swap" rel="stylesheet">
@@ -25,7 +27,7 @@
     
     <header>
       <div class="container">
-        <a href=index.html style="text-decoration:none"><h1 id="tarotTitle">My Fortune</h1></a>
+        <a href=index.html style="text-decoration:none"><h1 class="tarotScroll" id="tarotTitle">My Fortune</h1></a>
          </div>
     </header>
   
@@ -35,13 +37,18 @@
           <div class="container-fluid">
             <img src="card/spacer.gif" onclick="tellFortune()" id="myFortune" class="center" height=526px width=300px>
           </div>                                                                         <div id="divButton" class="text-center container-fluid">
-          <input type="button" id="theButton" value="Meanings" onClick="showHideDiv('divMsg')"/>
+          <input type="button" id="theButton" class="scrollButton" value="Meanings" onClick="showHideDiv('divMsg')"/>
           </div>
           <div id="divMsg" class="container-fluid mx-auto">
             <p id="words"></p>
           </div>
         </div>
       </div>
+      
+      <script>
+        ScrollReveal().reveal('.tarotScroll');
+      </script>
+      
     </body>
 </main>
 </html>
