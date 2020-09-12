@@ -1,10 +1,12 @@
 /* -- LAYOUT -- */
 html {
   background-color: black;
-  font-family: 'Beth Ellen', monospace; }
+  font-family: "Beth Ellen", monospace;
+}
 
 body {
-  background-color: black; }
+  background-color: black;
+}
 
 /* -- PARTICLES -- */
 /* #particles-js {
@@ -20,12 +22,14 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%; }
+  height: 100%;
+}
 
 /* -- Liberosis Title -- */
 #titleCard {
   color: darkgoldenrod;
-  font-family: 'Beth Ellen', monospace; }
+  font-family: "Beth Ellen", monospace;
+}
 
 .main-nav a {
   list-style-type: none;
@@ -33,7 +37,8 @@ body {
   padding: 0;
   color: goldenrod;
   text-decoration: none;
-  font-family: 'Beth Ellen', monospace; }
+  font-family: "Beth Ellen", monospace;
+}
 
 ul h3 {
   margin: 0;
@@ -41,7 +46,8 @@ ul h3 {
   text-align: center;
   display: none;
   font-size: 115%;
-  animation: colorNav 3s ease-in-out; }
+  animation: colorNav 3s ease-in-out;
+}
 
 /* -- BUTTON -- */
 #menuButton {
@@ -52,19 +58,23 @@ ul h3 {
   font-size: 24px;
   padding: 15px 1px;
   text-decoration: none;
-  font-family: 'Beth Ellen', cursive;
-  border: none; }
+  font-family: "Beth Ellen", cursive;
+  border: none;
+}
 
 #menuButton:hover {
   background: linear-gradient(to bottom, #2b2a28 5%, #b8870b 100%);
-  background-color: #2b2a28; }
+  background-color: #2b2a28;
+}
 
 #menuButton:active {
   position: relative;
-  top: 1px; }
+  top: 1px;
+}
 
 div .button {
-  margin-top: 1%; }
+  margin-top: 1%;
+}
 
 .circle-container {
   position: relative;
@@ -82,30 +92,39 @@ div .button {
   box-sizing: border-box;
   display: grid;
   background-image: linear-gradient(rgba(255, 0, 0, 0), darkgoldenrod);
-  text-align: center; }
-  .circle-container > * {
-    /* 4 */
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 8em;
-    height: 8em;
-    margin: -4em; }
-  .circle-container > :nth-of-type(1) {
-    transform: rotate(0deg) translate(12.5em) rotate(0deg); }
-  .circle-container > :nth-of-type(2) {
-    transform: rotate(51.4285714286deg) translate(12.5em) rotate(-51.4285714286deg); }
-  .circle-container > :nth-of-type(3) {
-    transform: rotate(102.8571428571deg) translate(12.5em) rotate(-102.8571428571deg); }
-  .circle-container > :nth-of-type(4) {
-    transform: rotate(154.2857142857deg) translate(12.5em) rotate(-154.2857142857deg); }
-  .circle-container > :nth-of-type(5) {
-    transform: rotate(205.7142857143deg) translate(12.5em) rotate(-205.7142857143deg); }
-  .circle-container > :nth-of-type(6) {
-    transform: rotate(257.1428571429deg) translate(12.5em) rotate(-257.1428571429deg); }
-  .circle-container > :nth-of-type(7) {
-    transform: rotate(308.5714285714deg) translate(12.5em) rotate(-308.5714285714deg); }
+  text-align: center;
+}
+.circle-container > * {
+  /* 4 */
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 8em;
+  height: 8em;
+  margin: -4em;
+}
+.circle-container > :nth-of-type(1) {
+  transform: rotate(0deg) translate(12.5em) rotate(0deg);
+}
+.circle-container > :nth-of-type(2) {
+  transform: rotate(51.4285714286deg) translate(12.5em) rotate(-51.4285714286deg);
+}
+.circle-container > :nth-of-type(3) {
+  transform: rotate(102.8571428571deg) translate(12.5em) rotate(-102.8571428571deg);
+}
+.circle-container > :nth-of-type(4) {
+  transform: rotate(154.2857142857deg) translate(12.5em) rotate(-154.2857142857deg);
+}
+.circle-container > :nth-of-type(5) {
+  transform: rotate(205.7142857143deg) translate(12.5em) rotate(-205.7142857143deg);
+}
+.circle-container > :nth-of-type(6) {
+  transform: rotate(257.1428571429deg) translate(12.5em) rotate(-257.1428571429deg);
+}
+.circle-container > :nth-of-type(7) {
+  transform: rotate(308.5714285714deg) translate(12.5em) rotate(-308.5714285714deg);
+}
 
 .circle-container img {
   display: block;
@@ -115,66 +134,180 @@ div .button {
   -webkit-transition: all 5s linear;
   -moz-transition: all 5s linear;
   -ms-transition: all 5s linear;
-  transition: all 5s linear; }
-  .circle-container img:hover {
-    filter: grayscale(0);
-    transform: rotate(-11650deg) scale(1.8); }
+  transition: all 5s linear;
+}
+.circle-container img:hover {
+  filter: grayscale(0);
+  transform: rotate(-11650deg) scale(1.8);
+}
 
 /* -- ANIMATIONS: index -- */
 @keyframes colorful {
   from {
     filter: hue-rotate();
-    transform: scale(1); }
+    transform: scale(1);
+  }
   to {
     filter: hue-rotate(1440deg);
-    transform: scale(3); } }
+    transform: scale(3);
+  }
+}
 @keyframes colorNav {
   from {
-    filter: hue-rotate(); }
+    filter: hue-rotate();
+  }
   to {
-    filter: hue-rotate(-1turn); } }
+    filter: hue-rotate(-1turn);
+  }
+}
 /* -- TAROT CARD IMG -- */
 #myFortune {
   display: block;
   margin: auto;
   animation: colorShadow 10s linear infinite;
   z-index: 2;
-  box-shadow: 0px 0px 70px 0px yellow; }
+  box-shadow: 0px 0px 70px 0px yellow;
+}
 
 /* -- ANIMATIONS: tarot --*/
 @keyframes colorShadow {
   from {
-    filter: hue-rotate(); }
+    filter: hue-rotate();
+  }
   to {
-    filter: hue-rotate(1440deg); } }
+    filter: hue-rotate(1440deg);
+  }
+}
 /* TITLE: tarot */
 #tarotTitle {
-  font-family: 'Nova Mono', monospace;
+  font-family: "Nova Mono", monospace;
   text-align: center;
-  color: yellow; }
+  color: yellow;
+}
 
 /* Words for Card Descriptions */
 #words {
   border: 5px inset yellow;
   color: yellow;
-  font-family: 'Nova Mono', monospace;
+  font-family: "Nova Mono", monospace;
   margin: 2% 10%;
-  text-align: center; }
+  text-align: center;
+}
 
 #divMsg {
-  display: none; }
+  display: none;
+}
 
 #divButton {
-  text-align: center; }
+  text-align: center;
+}
 
 /* -BUTTON- */
 #theButton {
   border: 1px double yellow;
   background-color: rgba(0, 0, 0, 0);
   color: yellow;
-  font-family: 'Nova Mono', monospace;
+  font-family: "Nova Mono", monospace;
   border-radius: 30px;
-  margin: 1%; }
+  margin: 1%;
+}
+
+/* ----------- Say Her Name ------------- */
+.speakup {
+  padding: 2rem;
+  width: 50rem;
+  margin: 0 auto;
+  border-radius: 1rem;
+  position: relative;
+  background: black;
+  overflow: hidden;
+  z-index: 1;
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.speechIndex a:link,
+a:visited {
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  font-family: "VT323", monospace;
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+}
+
+.speechIndex a:hover,
+a:active {
+  color: red;
+  transition: color 0.2s;
+}
+
+h1 {
+  width: calc(100% + 4rem);
+  margin: -2rem 0 1rem -2rem;
+  padding: 0.5rem;
+  background: #000;
+  border-bottom: 5px solid white;
+  text-align: center;
+  font-size: 5rem;
+  font-weight: 100;
+  font-family: "Beth Ellen", "VT323", monospace;
+  text-shadow: 0 0 12px white, 0 0 40px white, 0 0 30px white;
+}
+
+.speakup input,
+.speakup button,
+.speakup select,
+.speakup p {
+  width: 100%;
+  display: block;
+  margin: 10px 0;
+  padding: 10px;
+  border: 0;
+  font-size: 2rem;
+  background: white;
+  outline: 0;
+  font-family: "VT323", monospace;
+}
+
+.speakup button {
+  border: 2px solid black;
+  width: 47.9%;
+  float: left;
+  display: block;
+  font-family: "Beth Ellen", "VT323", monospace;
+  margin-bottom: 0;
+  font-size: 2rem;
+  cursor: pointer;
+  position: relative;
+}
+
+.speakup button:active {
+  top: 2px;
+}
+
+.speakup button:nth-of-type(1) {
+  margin-right: 2%;
+}
+
+#speak {
+  background: green;
+  margin-right: 5px;
+}
+
+#stop {
+  background: red;
+  margin-left: 5px;
+}
+
+label {
+  color: white;
+  font-family: monospace;
+  font-size: 1.3rem;
+}
+
+#noBreaks {
+  display: none;
+}
 
 /* -- BREAKPOINTS -- */
 

@@ -238,4 +238,107 @@ div .button {
   margin: 1%;
 }
 
+/* ----------- Say Her Name ------------- */
+
+.speakup {
+  padding: 2rem;
+  width: 50rem;
+  margin: 0 auto;
+  border-radius: 1rem;
+  position: relative;
+  background: black;
+  overflow: hidden;
+  z-index: 1;
+  box-shadow: 0 0 5px 5px rgba(0,0,0,0.1);
+}
+
+.speechIndex a:link, 
+a:visited {
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  font-family: 'VT323', monospace;
+  font-size: 2rem;
+  letter-spacing: .2rem;
+}
+
+.speechIndex a:hover,
+a:active {
+  color:red;
+  transition: color 0.2s;
+}
+
+h1 {
+  width: calc(100% + 4rem);
+  margin: -2rem 0 1rem -2rem;
+  padding: .5rem;
+  background: #000;
+  border-bottom: 5px solid white;
+  text-align: center;
+  font-size: 5rem;
+  font-weight: 100;
+  font-family: 'Beth Ellen', 'VT323', monospace;
+  text-shadow: 0 0 12px white, 0 0 40px white, 0 0 30px white;
+}
+
+
+.speakup input,
+.speakup button,
+.speakup select,
+.speakup p {
+  width: 100%;
+  display: block;
+  margin: 10px 0;
+  padding: 10px;
+  border: 0;
+  font-size: 2rem;
+  background: white;
+  outline: 0;
+  font-family: 'VT323', monospace;
+}
+
+.speakup button {
+  border: 2px solid black;
+  width: 47.9%;
+  float: left;
+  display:block;
+  font-family: 'Beth Ellen', 'VT323', monospace;
+  margin-bottom: 0;
+  font-size: 2rem;
+
+  cursor: pointer;
+  position: relative;
+}
+
+.speakup button:active {
+  top: 2px;
+}
+
+.speakup button:nth-of-type(1) {
+  margin-right: 2%;
+}
+
+#speak {
+  background: green;
+  margin-right: 5px;
+}
+
+#stop {
+  background: red;
+  margin-left: 5px;
+}
+
+label {
+  color: white;
+  font-family: monospace;
+  font-size: 1.3rem;
+}
+
+#noBreaks {
+  display: none;
+}
+
+
+
+
 /* -- BREAKPOINTS -- */
