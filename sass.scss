@@ -238,9 +238,10 @@ div .button {
   margin: 1%;
 }
 
-/* ----------- Say Her Name ------------- */
+/* ----------- SPEAK up MENU ------------- */
 
 .speakup {
+  font-family: 'VT323', monospace;
   padding: 2rem;
   width: 50rem;
   margin: 0 auto;
@@ -252,21 +253,45 @@ div .button {
   box-shadow: 0 0 5px 5px rgba(0,0,0,0.1);
 }
 
-.speechIndex a:link, 
+.speakContent a:link, 
 a:visited {
+  color: white;
+  text-decoration: none;
+  text-align: center;
+}
+
+.speakContent a:hover,
+a:active {
+  color:blueviolet;
+  transition: color 0.2s;
+}
+
+.speakContent {
+  line-height: 200%;
+}
+
+.speakTitle {
+    border-bottom: 5px double white; 
+}
+
+.speakTitle a:link, a:visited { 
   text-decoration: none;
   text-align: center;
   color: white;
-  font-family: 'VT323', monospace;
   font-size: 2rem;
-  letter-spacing: .2rem;
+  letter-spacing: .2rem; 
 }
 
-.speechIndex a:hover,
-a:active {
-  color:red;
+.speakTitle a:hover, a:active {
+  color: red;
   transition: color 0.2s;
 }
+
+.videoContainer {
+  border-top: 5px double white;
+}
+
+/* ----------- Say Her Name ------------- */
 
 #sayTitle {
   border-bottom: 5px solid white;
@@ -278,7 +303,7 @@ a:active {
 }
 
 #sayHerNamePage {
-  background-image: url('/img/smashfist.png');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), 75%, black), url('/img/smashfist.png');
   background-repeat: repeat;
   background-size: 10%;
 }
@@ -341,9 +366,7 @@ label {
   font-size: 1.3rem;
 }
 
-#noBreaks {
-  display: none;
-}
+
 
 /*=== Media Queries ===
 
