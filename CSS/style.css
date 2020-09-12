@@ -1,7 +1,7 @@
 /* -- LAYOUT -- */
 html {
   background-color: black;
-  font-family: "Beth Ellen", monospace;
+  font-family: "Beth Ellen", "VT323", monospace;
 }
 
 body {
@@ -241,17 +241,24 @@ a:active {
   transition: color 0.2s;
 }
 
-#noJnoP {
-  width: calc(100% + 4rem);
-  margin: -2rem 0 1rem -2rem;
-  padding: 0.5rem;
-  background: #000;
+#sayTitle {
   border-bottom: 5px solid white;
   text-align: center;
   font-size: 5rem;
   font-weight: 100;
-  font-family: "Beth Ellen", "VT323", monospace;
+  font-family: "VT323", monospace;
   text-shadow: 0 0 12px white, 0 0 40px white, 0 0 30px white;
+}
+
+#sayHerNamePage {
+  background-image: url("img/smashfist.png");
+  background-repeat: repeat;
+}
+
+#actions {
+  list-style-type: none;
+  font-family: "VT323", monospace;
+  color: white;
 }
 
 .speakup input,
@@ -274,7 +281,7 @@ a:active {
   width: 47.9%;
   float: left;
   display: block;
-  font-family: "Beth Ellen", "VT323", monospace;
+  font-family: "VT323", monospace;
   margin-bottom: 0;
   font-size: 2rem;
   cursor: pointer;
@@ -309,25 +316,28 @@ label {
   display: none;
 }
 
-/*=== Media Queries ===*/
-@media (max-width: 500px) {
-  .speakup button {
-    display: inline-block;
-    width: 98%;
-  }
+/*=== Media Queries ===
 
-  #speak,
-#stop {
-    margin-bottom: 0;
-    margin-right: 0.4%;
-    margin-left: 0.4%;
-  }
+@media (max-width: 500px){
 
-  .speakup {
+    .speakup button {
+      display: inline-block;
+      width: 98%;
+    }
+    #speak,
+    #stop {
+      margin-bottom: 0;
+      margin-right: .4%;
+      margin-left: .4%;
+    }
+    .speakup {
     padding: 2rem;
     width: 50rem;
+    }
+
   }
-}
+
+*/
 /* -- BREAKPOINTS -- */
 
 /*# sourceMappingURL=style.css.map */
