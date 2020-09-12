@@ -241,7 +241,7 @@ a:active {
   transition: color 0.2s;
 }
 
-h1 {
+#noJnoP {
   width: calc(100% + 4rem);
   margin: -2rem 0 1rem -2rem;
   padding: 0.5rem;
@@ -309,6 +309,25 @@ label {
   display: none;
 }
 
+/*=== Media Queries ===*/
+@media (max-width: 500px) {
+  .speakup button {
+    display: inline-block;
+    width: 98%;
+  }
+
+  #speak,
+#stop {
+    margin-bottom: 0;
+    margin-right: 0.4%;
+    margin-left: 0.4%;
+  }
+
+  .speakup {
+    padding: 2rem;
+    width: 50rem;
+  }
+}
 /* -- BREAKPOINTS -- */
 
 /*# sourceMappingURL=style.css.map */
