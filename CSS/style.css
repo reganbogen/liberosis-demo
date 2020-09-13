@@ -6,7 +6,6 @@ html {
 
 body {
   background-color: black;
-  height: 100vh;
 }
 
 /* -- PARTICLES -- */
@@ -224,7 +223,6 @@ div .button {
   background: black;
   overflow: hidden;
   z-index: 1;
-  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.1);
 }
 
 .speakContent a:link,
@@ -246,6 +244,7 @@ a:active {
 
 .speakTitle {
   border-bottom: 5px double white;
+  text-shadow: 0 0 12px white, 0 0 40px white, 0 0 30px white;
 }
 
 .speakTitle a:link, a:visited {
