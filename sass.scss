@@ -6,6 +6,7 @@ html {
 
 body {
   background-color: black;
+  height: 100vh;
 }
 
 /* -- PARTICLES -- */
@@ -243,7 +244,7 @@ div .button {
 .speakup {
   font-family: 'VT323', monospace;
   padding: 2rem;
-  width: 50rem;
+  height: 100%;
   margin: 0 auto;
   border-radius: 1rem;
   position: relative;
@@ -312,6 +313,7 @@ a:active {
   list-style-type: none;
   font-family: 'VT323', monospace;
   color: white;
+  font-size: 1rem;
 }
 
 .speakup input,
