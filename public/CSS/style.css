@@ -194,24 +194,6 @@ div .button {
   text-align: center;
 }
 
-#divMsg {
-  display: none;
-}
-
-#divButton {
-  text-align: center;
-}
-
-/* -BUTTON- */
-#theButton {
-  border: 1px double yellow;
-  background-color: rgba(0, 0, 0, 0);
-  color: yellow;
-  font-family: "Nova Mono", monospace;
-  border-radius: 30px;
-  margin: 1%;
-}
-
 /* ----------- SPEAK up MENU ------------- */
 .speakup {
   font-family: "VT323", monospace;

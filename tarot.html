@@ -8,12 +8,11 @@
   
   <script src="js/tarot.js"></script>
   
-  
   <!-- BOOTSTRAP -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
   <!-- CSS -->
-  <link rel="stylesheet" type="text/css" href="CSS/style.css">
+  <link rel="stylesheet" type="text/css" href="public/css/style.css">
   
   <!-- ScrollReveal Experimentin' -->
   <script src="https://unpkg.com/scrollreveal"></script>  
@@ -22,6 +21,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Nova+Mono&display=swap" rel="stylesheet">
   
   <title>My Fortune</title>
+  <div id="particles-js" class="container"></div>
 </head>
 
 <main>
@@ -37,15 +37,17 @@
         <div class="row">
           <div class="container-fluid">
             <img src="card/spacer.gif" onclick="tellFortune()" id="myFortune" class="center" height=526px width=300px>
-          </div>                                                                         <div id="divButton" class="text-center container-fluid">
-          <input type="button" id="theButton" class="scrollButton" value="Meanings" onClick="showHideDiv('divMsg')"/>
-          </div>
+          </div>                                                                         
           <div id="divMsg" class="container-fluid mx-auto">
             <p id="words"></p>
           </div>
         </div>
       </div>
       
+      <!--PARTICLES scripts-->
+      <script src="js/particles.min.js"></script>
+      <script src="js/app.js"></script>
+      <!--SCROLLreveal-->
       <script>
         ScrollReveal().reveal('.tarotScroll');
       </script>
