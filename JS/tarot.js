@@ -96,7 +96,7 @@ var meanings = new Array(
   
   "King of Pentacles. Valour, realizing intelligence, business and normal intellectual aptitude, sometimes mathematical gifts and attainments of this kind; success in these paths.",
   
-  "0 The Fool. Folly, mania, extravagance, intoxication, delirium, frenzy, bewrayment.",
+  "O The Fool. Folly, mania, extravagance, intoxication, delirium, frenzy, bewrayment.",
   
   "I The Magician. Skill, diplomacy, address, subtlety; sickness, pain, loss, disaster, snares of enemies; self-confidence, will; the Querent, if male.",
   
@@ -256,7 +256,7 @@ var meanings = new Array(
   
   "King of Pentacles. Vice, weakness, ugliness, perversity, corruption, peril.",
   
-  "0 The Fool. Negligence, absence, distribution, carelessness, apathy, nullity, vanity.",
+  "O The Fool. Negligence, absence, distribution, carelessness, apathy, nullity, vanity.",
   
   "I The Magician. Physician, Magus, mental disease, disgrace, disquiet.",
   

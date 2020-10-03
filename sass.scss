@@ -204,24 +204,20 @@ div .button {
 
 /* TITLE: tarot */
 #tarotTitle {
-  font-family: 'David Libre', serif;
-  font-weight: 500;
+  font-family: 'IM Fell English', serif;
   text-align: center;
   text-transform: uppercase;
-  color: yellow;
-  z-index: 0;
+  color: darkgoldenrod;
 }
 
 /* Words for Card Descriptions */
 
 #words {
-  border: 5px inset yellow;
-  color: yellow;
-  font-family: 'David Libre', serif;
-  font-weight: 400;
+  border: 5px inset goldenrod;
+  color: darkgoldenrod;
+  font-family: 'IM Fell English', serif;
   margin: 2% 20%;
   text-align: center;
-  z-index: 0;
 }
 
 /* ----------- SPEAK up MENU ------------- */
@@ -409,6 +405,8 @@ label {
 .drumHTML {
   height: 100%;
 }
+
+/*-- TAO stuff --*/
 
 
 
