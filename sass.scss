@@ -97,7 +97,7 @@ div .button {
   $half-item: ($item-size / 2);
   $half-parent: ($circle-size / 2);
   
-  position: relative; /* 1 */
+  position: absolute; /* 1 */
   width:  $circle-size;
   height: $circle-size;
   padding: 0;
@@ -145,7 +145,7 @@ div .button {
   border: none 3px black;
   box-sizing: border-box;
   display:grid;
-  background-image: linear-gradient(rgba(255,0,0,0), darkgoldenrod);
+  background-image: radial-gradient(darkgoldenrod, rgba(255, 0, 0, 0) 70%, rgba(255, 0, 0, 0));
   text-align: center;
   }
 

@@ -77,7 +77,7 @@ div .button {
 }
 
 .circle-container {
-  position: relative;
+  position: absolute;
   /* 1 */
   width: 25em;
   height: 25em;
@@ -91,7 +91,7 @@ div .button {
   border: none 3px black;
   box-sizing: border-box;
   display: grid;
-  background-image: linear-gradient(rgba(255, 0, 0, 0), darkgoldenrod);
+  background-image: radial-gradient(darkgoldenrod, rgba(255, 0, 0, 0) 70%, rgba(255, 0, 0, 0));
   text-align: center;
 }
 .circle-container > * {
