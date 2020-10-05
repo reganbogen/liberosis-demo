@@ -49,6 +49,10 @@ ul h3 {
   animation: colorNav 3s ease-in-out;
 }
 
+.titleDiv, .buttonDiv {
+  display: inline-block;
+}
+
 /* -- BUTTON -- */
 #menuButton {
   background: linear-gradient(to bottom, darkgoldenrod 5%, black 100%);
@@ -95,7 +99,7 @@ div .button {
 }
 .circle-container > * {
   /* 4 */
-  display: block;
+  display: inline-block;
   position: absolute;
   top: 50%;
   left: 50%;

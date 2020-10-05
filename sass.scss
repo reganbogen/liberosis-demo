@@ -51,6 +51,9 @@ ul h3 {
   font-size: 115%;
   animation: colorNav 3s ease-in-out; }
 
+.titleDiv, .buttonDiv {
+  display: inline-block;
+}
 
 /* -- BUTTON -- */
 
@@ -108,7 +111,7 @@ div .button {
   box-sizing:content-box; /* 3 */ 
   
   > * { /* 4 */
-    display: block;
+    display: inline-block;
     position: absolute;
     top:  50%; 
     left: 50%;
