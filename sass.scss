@@ -414,28 +414,59 @@ label {
 
 
 
-/*=== Media Queries ===
+/*=== Media Queries === */
 
-@media (max-width: 500px){
-    
-    .speakup button {
-      display: inline-block;
-      width: 98%;
+@media (max-width: 700px){
+  .circle-container {
+      @include distribute-on-circle(7, 19em, 6em, false); 
+      margin: 5em auto 0;
+      border: none 3px black;
+      box-sizing: border-box;
+      display:grid;
+      background-image: radial-gradient(goldenrod, rgba(255, 0, 0, 0) 70%, rgba(255, 0, 0, 0));
     }
-    #speak,
-    #stop {
-      margin-bottom: 0;
-      margin-right: .4%;
-      margin-left: .4%;
-    }
-    .speakup {
-    padding: 2rem;
-    width: 50rem;
-    }
-  
+   
   }
 
-*/
+@media (max-width: 420px){
+  .circle-container {
+      @include distribute-on-circle(7, 17em, 5em, false); 
+      margin: 5em auto 0;
+      border: none 3px black;
+      box-sizing: border-box;
+      display:grid;
+      background-image: radial-gradient(goldenrod, rgba(255, 0, 0, 0) 70%, rgba(255, 0, 0, 0));
+    }
+   
+  }
+
+@media (max-width: 350px){
+  .circle-container {
+      @include distribute-on-circle(7, 13em, 4em, false); 
+      margin: 5em auto 0;
+      border: none 3px black;
+      box-sizing: border-box;
+      display:grid;
+      background-image: radial-gradient(goldenrod, rgba(255, 0, 0, 0) 70%, rgba(255, 0, 0, 0));
+    }
+   
+  }
+
+@media (max-width: 200px){
+  .circle-container {
+      @include distribute-on-circle(7, 8em, 2em, false); 
+      margin: 5em auto 0;
+      border: none 3px black;
+      box-sizing: border-box;
+      display:grid;
+      background-image: radial-gradient(goldenrod, rgba(255, 0, 0, 0) 70%, rgba(255, 0, 0, 0));
+    }
+   
+  }
+
+
+
+
 
 
 /* -- BREAKPOINTS -- */
