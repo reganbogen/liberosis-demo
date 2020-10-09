@@ -3,7 +3,6 @@
  */
 // Original Snippet: https://gist.github.com/endel/dfe6bb2fbe679781948c @charlag
 
-window.onload = whatMoon;
 window.onload = insertDate;
 
 
@@ -32,19 +31,18 @@ var Moon = {
 };
 
 var today = new Date();
+var phase = Moon.phase(today.getFullYear(), today.getMonth()+1, today.getDate());
 
-function whatMoon() {
-  console.log(Moon)
-  console.log(today);
-}
 
 function insertDate() {
   document.getElementById('moonDiv').innerHTML = today;
+  console.log(Moon);
+  console.log(today);
+  console.log(phase);
 }
 
 
-//var today = new Date();
-//var phase = Moon.phase(today.getFullYear(), today.getMonth()+1, today.getDate());
+
 
 
 // Moon.phase('2018', '01', '19'); */
