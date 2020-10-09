@@ -4,21 +4,29 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <script src="JS/tao.js"></script>
-  
   <!-- BOOTSTRAP -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   
+  <!-- font -->
+  <link href="https://fonts.googleapis.com/css2?family=Sirin+Stencil&display=swap" rel="stylesheet">
+  
   <link rel="stylesheet" type="text/css" href="public/css/style.css">
   
+  <script src="js/tao.js"></script>
+  
   <title>Tao Te Ching</title>
+  <div id="particles-js" class="container"></div>
 </head>
 
-<body>
-  <h1 style="color: white">Tao</h1>
-  <div id="taoDiv" class="container-fluid">
-    <h2 style="color: white"> the text goes below this</h2>
-    <p style="color: white" id="taoText"></p>
+<body class="taoBody container">
+<div class="row">
+  <h1 class="col-2" onclick="dailyTao()">Tao</h1>
+  <div id="taoDiv" class="col-10">
+    <p id="taoText" class="text-center"></p>
   </div>
+  </div>
+<!--PARTICLES scripts-->
+  <script src="js/particles.min.js"></script>
+  <script src="js/app.js"></script>
 </body>
 </html>
