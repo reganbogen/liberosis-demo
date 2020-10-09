@@ -1,5 +1,9 @@
-*{
-  background-color: black;
-  color: white;
-  
+/*-- == MOON == --*/
+
+#moonBody {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url(/././img/moons/celestial_chart_moon.jpg);
+  background-size:cover;
+  background-position:top;
+  height: 100vh;
+  background-attachment: fixed;
 }
