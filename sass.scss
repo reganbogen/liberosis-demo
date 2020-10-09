@@ -194,6 +194,8 @@ div .button {
   animation: colorShadow 10s linear infinite;
   z-index: 2;
   box-shadow: 0px 0px 70px 0px yellow;
+  height: 526px;
+  width: 300px;
 }
 
 /* -- ANIMATIONS: tarot --*/
@@ -224,134 +226,6 @@ div .button {
   text-align: center;
 }
 
-/* ----------- SPEAK up MENU ------------- */
-
-.speakup {
-  font-family: 'VT323', monospace;
-  padding: 2rem;
-  height: 100%;
-  margin: 0 auto;
-  border-radius: 1rem;
-  position: relative;
-  background: black;
-  overflow: hidden;
-  z-index: 1;
-}
-
-.speakContent a:link, 
-a:visited {
-  color: white;
-  text-decoration: none;
-  text-align: center;
-}
-
-.speakContent a:hover,
-a:active {
-  color:blueviolet;
-  transition: color 0.2s;
-}
-
-.speakContent {
-  line-height: 200%;
-}
-
-.speakTitle {
-    border-bottom: 5px double white; 
-    text-shadow: 0 0 12px white, 0 0 40px white, 0 0 30px white;
-}
-
-.speakTitle a:link, a:visited { 
-  text-decoration: none;
-  text-align: center;
-  color: white;
-  font-size: 2rem;
-  letter-spacing: .2rem; 
-}
-
-.speakTitle a:hover, a:active {
-  color: red;
-  transition: color 0.2s;
-}
-
-.videoContainer {
-  border-top: 5px double white;
-}
-
-/* ----------- Say Her Name ------------- */
-
-#sayTitle {
-  border-bottom: 5px solid white;
-  text-align: center;
-  font-size: 5rem;
-  font-weight: 100;
-  font-family: 'VT323', monospace; 
-  text-shadow: 0 0 12px white, 0 0 40px white, 0 0 30px white;
-}
-
-#sayHerNamePage {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), 75%, black), url('/img/smashfist.png');
-  background-repeat: repeat;
-  background-size: 10%;
-}
-
-#actions {
-  list-style-type: none;
-  font-family: 'VT323', monospace;
-  color: white;
-  font-size: 1rem;
-}
-
-.speakup input,
-.speakup button,
-.speakup select,
-.speakup p {
-  width: 100%;
-  display: block;
-  margin: 10px 0;
-  padding: 10px;
-  border: 0;
-  font-size: 2rem;
-  background: white;
-  outline: 0;
-  font-family: 'VT323', monospace;
-}
-
-.speakup button {
-  border: 2px solid black;
-  width: 47.9%;
-  float: left;
-  display:block;
-  font-family: 'VT323', monospace;
-  margin-bottom: 0;
-  font-size: 2rem;
-
-  cursor: pointer;
-  position: relative;
-}
-
-.speakup button:active {
-  top: 2px;
-}
-
-.speakup button:nth-of-type(1) {
-  margin-right: 2%;
-}
-
-#speak {
-  background: green;
-  margin-right: 5px;
-}
-
-#stop {
-  background: red;
-  margin-left: 5px;
-}
-
-label {
-  color: white;
-  font-family: monospace;
-  font-size: 1.3rem;
-}
 
 /* ----------- Drum Page ------------------------ */
 
@@ -414,16 +288,17 @@ label {
 
 
 
-/*=== Media Queries === */
+/*=== Media Queries | INDEX.HTML === */
+
+@media (min-width: 1000px) {
+  .tarotBody {
+    margin: 5% auto;
+  }
+}
 
 @media (max-width: 700px){
   .circle-container {
       @include distribute-on-circle(7, 19em, 6em, false); 
-      margin: 5em auto 0;
-      border: none 3px black;
-      box-sizing: border-box;
-      display:grid;
-      background-image: radial-gradient(goldenrod, rgba(255, 0, 0, 0) 70%, rgba(255, 0, 0, 0));
     }
    
   }
@@ -431,23 +306,21 @@ label {
 @media (max-width: 420px){
   .circle-container {
       @include distribute-on-circle(7, 17em, 5em, false); 
-      margin: 5em auto 0;
-      border: none 3px black;
-      box-sizing: border-box;
-      display:grid;
-      background-image: radial-gradient(goldenrod, rgba(255, 0, 0, 0) 70%, rgba(255, 0, 0, 0));
     }
-   
+  #words {
+    margin: 0 3%;
+    }
+  #myFortune {
+    height: 391px;
+    width: 223px;
+    margin: 0 auto;
+    }
+    
   }
 
 @media (max-width: 350px){
   .circle-container {
       @include distribute-on-circle(7, 13em, 4em, false); 
-      margin: 5em auto 0;
-      border: none 3px black;
-      box-sizing: border-box;
-      display:grid;
-      background-image: radial-gradient(goldenrod, rgba(255, 0, 0, 0) 70%, rgba(255, 0, 0, 0));
     }
    
   }
@@ -455,18 +328,9 @@ label {
 @media (max-width: 200px){
   .circle-container {
       @include distribute-on-circle(7, 8em, 2em, false); 
-      margin: 5em auto 0;
-      border: none 3px black;
-      box-sizing: border-box;
-      display:grid;
-      background-image: radial-gradient(goldenrod, rgba(255, 0, 0, 0) 70%, rgba(255, 0, 0, 0));
     }
    
   }
-
-
-
-
 
 
 /* -- BREAKPOINTS -- */
