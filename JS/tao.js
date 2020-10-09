@@ -9,6 +9,6 @@ var chapters = new Array(
 
 function dailyTao() {
   var randomNum = Math.floor(Math.random() * chapters.length);
-  document.getElementById("taoText").innerHTML = meanings[randomNum];
+  document.getElementById("taoText").innerHTML = chapters[randomNum];
 }
 
