@@ -1,9 +1,26 @@
 /*-- == MOON == --*/
 
+
 #moonBody {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url(/././img/moons/celestial_chart_moon.jpg);
-  background-size:cover;
-  background-position:top;
+  background-image: url(/././img/moons/celestial_chart_moon.jpg);
+  background-size:contain;
+  background-repeat:no-repeat;
+  background-position:center;
   height: 100vh;
   background-attachment: fixed;
+  color: bisque;
+  font-size: 250%;
+}
+
+#phaseDiv {
+  text-transform: uppercase
+}
+
+
+body {
+  background-color: black;
+}
+
+* {
+  font-family: "IM Fell English", serif;
 }

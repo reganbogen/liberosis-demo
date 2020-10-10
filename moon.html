@@ -12,11 +12,21 @@
     <link rel="stylesheet" type="text/css" href="public/CSS/styles.css">
 
     <!-- FONTS -->
-
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet">
+    
     <!--JQUERY SCRIPTS -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
       crossorigin="anonymous">
+    </script>
+    
+    <script>
+      $('.celestial').hide();
+
+      $('.justMoon,.celestial').on('click',function() {
+        $('.justMoon,.celestial').toggle()
+      });
+
     </script>
     
     <!--MOON SCRIPTS -->
@@ -25,13 +35,13 @@
     <title>Today | Phases</title>
     <!--<div id="particles-js" class="container"></div>-->
   </head>
-
   <body id="moonBody">
-    <div class="container-fluid">
-      <div class="row">
-        <div id="moonDiv" class="col"><h1>Today's Date</h1></div>
-      </div>
+  
+    <div class="container">
+      <h1 class="text-center" id="moonDiv">Today's Date</h1>
+      <h2 class="text-center" id="phaseDiv">Today's Moon Phase</h2>
     </div>
+    
     
     <!--BOOTSTRAP scripts-->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

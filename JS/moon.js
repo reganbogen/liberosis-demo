@@ -7,7 +7,7 @@ window.onload = insertDate;
 
 
 var Moon = {
-  phases: ['new-moon', 'waxing-crescent-moon', 'quarter-moon', 'waxing-gibbous-moon', 'full-moon', 'waning-gibbous-moon', 'last-quarter-moon', 'waning-crescent-moon'],
+  phases: ['new moon', 'waxing crescent moon', 'quarter moon', 'waxing gibbous moon', 'full moon', 'waning gibbous moon', 'last quarter moon', 'waning crescent moon'],
   phase: function (year, month, day) {
     let c = e = jd = b = 0;
 
@@ -36,6 +36,7 @@ var phase = Moon.phase(today.getFullYear(), today.getMonth()+1, today.getDate())
 
 function insertDate() {
   document.getElementById('moonDiv').innerHTML = today;
+  document.getElementById('phaseDiv').innerHTML = phase.name;
   console.log(Moon);
   console.log(today);
   console.log(phase);
