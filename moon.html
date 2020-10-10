@@ -5,11 +5,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, shrink-to-fit=no">
 
-    <!-- BOOTSTRAP -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- BOOTSTRAP 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
 
     <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="public/CSS/styles.css">
+    <link rel="stylesheet" type="text/css" href="public/css/styles.css">
 
     <!-- FONTS -->
     <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet">
@@ -20,33 +20,29 @@
       crossorigin="anonymous">
     </script>
     
-    <script>
-      $('.celestial').hide();
-
-      $('.justMoon,.celestial').on('click',function() {
-        $('.justMoon,.celestial').toggle()
-      });
-
-    </script>
-    
     <!--MOON SCRIPTS -->
-    <script src="JS/moon.js"></script>
+    <script src="js/moon.js"></script>
 
     <title>Today | Phases</title>
     <!--<div id="particles-js" class="container"></div>-->
   </head>
   <body id="moonBody">
   
-    <div class="container">
+    <div>
       <h1 class="text-center" id="moonDiv">Today's Date</h1>
       <h2 class="text-center" id="phaseDiv">Today's Moon Phase</h2>
     </div>
     
+    <div class="imageDiv">
+      <img src="img/moons/celestial_chart_moon.jpg" id="celestial" class="images">
+      <img src="img/moons/waning-crescent-moon.png" id="moon" class="images overlay">
+    </div>
     
-    <!--BOOTSTRAP scripts-->
+    
+    <!--BOOTSTRAP scripts
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>-->
     
   </body>
 </html>

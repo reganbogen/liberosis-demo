@@ -1,19 +1,19 @@
 /*-- == MOON == --*/
 
 
-#moonBody {
+/*#moonBody {
   background-image: url(/././img/moons/celestial_chart_moon.jpg);
   background-size:contain;
   background-repeat:no-repeat;
   background-position:center;
   height: 100vh;
   background-attachment: fixed;
-  color: bisque;
-  font-size: 250%;
+  color: black;
+  text-shadow: 0 0 10px bisque;*/
 }
 
 #phaseDiv {
-  text-transform: uppercase
+  text-transform: uppercase;
 }
 
 
@@ -23,4 +23,31 @@ body {
 
 * {
   font-family: "IM Fell English", serif;
+  color: bisque;
+  box-sizing: border-box;
 }
+
+.imageDiv {
+  position: relative;
+  width: 50%;
+}
+
+#celestial {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  transition: .5s ease;
+  opacity: 0;
+  background: rgba(0,0,0,0.8);
+}
+
+.imageDiv:hover .overlay{
+  opacity: 1;
+}
+
