@@ -12,21 +12,22 @@
   text-shadow: 0 0 10px bisque;*/
 }
 
-#phaseDiv h2 {
-  text-transform: uppercase;
+html {
+  box-sizing: border-box;
 }
-
 
 body {
   background-color: black;
 }
 
-* {
+.textDiv {
+  text-align: center;
+  color: goldenrod;
   font-family: "IM Fell English", serif;
-  color: bisque;
-  box-sizing: border-box;
+  text-shadow: 0 0 8px red;
 }
 
+/*-----IMAGES-------*/
 .imageDiv {
   position: relative;
   width: 100%;
@@ -52,7 +53,35 @@ body {
   opacity: 1;
 }
 
-.textDiv {
-  text-align: center;
+#spinMoon {
+  animation: rotation 10s infinite linear;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+@media (min-width: 1000px) {
+  .imageDiv {
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media (min-width: 1400px) {
+  .imageDiv {
+    width: 55%;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
