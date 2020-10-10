@@ -12,7 +12,7 @@
   text-shadow: 0 0 10px bisque;*/
 }
 
-#phaseDiv {
+#phaseDiv h2 {
   text-transform: uppercase;
 }
 
@@ -29,7 +29,8 @@ body {
 
 .imageDiv {
   position: relative;
-  width: 50%;
+  width: 100%;
+  
 }
 
 #celestial {
@@ -42,12 +43,16 @@ body {
   position: absolute;
   bottom: 0;
   width: 100%;
-  transition: .5s ease;
+  transition: .5s cubic-bezier(0.7, 0.2, 0.5, 1.0);
   opacity: 0;
   background: rgba(0,0,0,0.8);
 }
 
 .imageDiv:hover .overlay{
   opacity: 1;
+}
+
+.textDiv {
+  text-align: center;
 }
 

@@ -6,6 +6,10 @@
 window.onload = insertDate;
 
 
+
+let moonPhases = ['img/moons/new-moon.png', 'img/moons/waxing-crescent-moon.png', 'img/moons/quarter-moon.png', 'img/moons/waxing-gibbous-moon.png', 'img/moons/full-moon.png', 'img/moons/waning-gibbous-moon.png', 'img/moons/last-quarter-moon.png', 'img/moons/waning-crescent-moon.png']
+
+
 var Moon = {
   phases: ['new moon', 'waxing crescent moon', 'quarter moon', 'waxing gibbous moon', 'full moon', 'waning gibbous moon', 'last quarter moon', 'waning crescent moon'],
   phase: function (year, month, day) {
@@ -42,8 +46,9 @@ function insertDate() {
   console.log(phase);
 }
 
-
-
+function matchMoon() {
+  document.getElementById('moon').src = moonPhases[phase.phase];
+}
 
 
 // Moon.phase('2018', '01', '19'); */
