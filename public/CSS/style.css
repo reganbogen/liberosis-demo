@@ -46,7 +46,6 @@ ul h3 {
   text-align: center;
   display: none;
   font-size: 115%;
-  animation: colorNav 3s ease-in-out;
 }
 
 .titleDiv, .buttonDiv {
@@ -160,7 +159,7 @@ div .button {
     filter: hue-rotate();
   }
   to {
-    filter: hue-rotate(-1turn);
+    filter: hue-rotate(-90deg);
   }
 }
 /* -- TAROT CARD IMG -- */
